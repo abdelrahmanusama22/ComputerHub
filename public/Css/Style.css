@@ -1,0 +1,117 @@
+html,
+body {
+    height: 100vh; /* Using 100vh (viewport height) to ensure the body takes up the full screen */
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f8f9fa; /* Optional: Light background to make the button stand out */
+    font-family: Arial, sans-serif; /* Optional: A clean, modern font */
+}
+
+
+h1 {
+    margin: 0 0 20px 0; /* Add space below the heading */
+    font-size: 2em;
+    font-weight: bold; /* Optional: Make the font bold */
+    color: #333; /* Optional: Darker font color for better readability */
+}
+
+
+/* Position the navbar at the top-left */
+nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px;
+}
+
+nav a {
+    margin-right: 20px;
+    text-decoration: none;
+    color: #007bff;
+    /* Bootstrap primary color */
+}
+
+nav a:hover {
+    color: #000000;
+}
+
+li{
+    list-style-type: none;
+    border: 1px solid;
+    border-radius: 5px;
+    background: antiquewhite;
+    padding: 10px;
+    margin: 5px;
+
+}
+li:hover{
+background: #f74747;
+}
+.form-container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Form input fields styling */
+.form-control {
+    border-radius: 8px;
+}
+
+/* Button styling */
+.btn-primary {
+    background-color: #007bff;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 20px;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    transition: background-color 0.3s ease;
+}
+
+/* Label Styling */
+.form-label {
+    font-weight: bold;
+}
+.form-error{
+    margin: 0;
+    font-size: 0.8rem;
+    color: red;
+}
+
+.edit-button {
+    background-color: #4CAF50; /* Custom green background */
+    border-color: #4CAF50;     /* Matching border color */
+    color: white;              /* White text */
+    font-size: 10px;           /* Adjusted font size */
+    padding: 12px 24px;        /* More padding for a bigger button */
+    border-radius: 8px;        /* Larger border radius for a smoother look */
+    margin-top: 100px;          /* Add space above the button */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth hover and click effect */
+    cursor: pointer;           /* Pointer on hover */
+}
+
+
+.edit-button:hover {
+    background-color: #45a049; /* Darker green on hover */
+    transform: scale(1.05);    /* Slightly enlarge the button on hover */
+    color: white;
+    text-decoration: none;     /* Remove underline on hover */
+}
+@media (max-width: 768px) {
+    h1 {
+        font-size: 1.5em; /* Smaller font size for smaller screens */
+    }
+
+    .edit-button {
+        font-size: 16px;  /* Adjust the font size for small screens */
+        padding: 10px 20px; /* Adjust padding for mobile view */
+    }
+}
